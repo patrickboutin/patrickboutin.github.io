@@ -1,7 +1,3 @@
----
-layout: default
----
-
 <div class="home">
 
   <h1 class="page-heading">Calculateur de Doses</h1>
@@ -62,18 +58,17 @@ layout: default
 
 <!-- <h2>Clickable Dropdown</h2> -->
 <!--<p>Click on the button to open the dropdown menu.</p> -->
-<!--
-<div class="dropdown1">
-<button onclick="myFunction()" class="dropbtn">Unité</button>
-  <div id="UnitDropdown" class="dropdown-content">
-    <b href="kg">KG</b>
-    <b href="lbs">LBS</b>
+
+<div class="dropdown">
+<button onclick="myFunction2()" class="dropbtn">Unité</button>
+  <div id="myDropdown2" class="dropdown-content">
+    <a href="kg">KG</a>
+    <a href="lbs">LBS</a>
   </div>
 </div>
--->
-<div class="dropdown2">
-  <button onclick="myFunction()" class="dropbtn">Médicament - Concentration</button>
-  <div id="myDropdown" class="dropdown-content">
+<div class="dropdown">
+  <button onclick="myFunction1()" class="dropbtn">Médicament - Concentration</button>
+  <div id="myDropdown1" class="dropdown-content">
     <a href="#home">Ibuprofen - 100mg/5ml</a>
     <a href="#about">Ibuprofen - 200mg/5ml</a>
     <a href="#contact">Acétaminophène - 80mg/ml</a>
@@ -84,8 +79,12 @@ layout: default
 <script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+function myFunction1() {
+    document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+function myFunction2() {
+    document.getElementById("myDropdown2").classList.toggle("show");
 }
 
 // Close the dropdown if the user clicks outside of it
