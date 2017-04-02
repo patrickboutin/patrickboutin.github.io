@@ -8,6 +8,13 @@ layout: default
 <button onclick="myFunction()">Calculez-moi ça!</button>
 
 <script>
+var ask = prompt("Enter contact's first name");
+
+function Contact(firstName, surname, age) {
+    this.Name = firstName;
+    this.Surname = surname;
+    this.Age = age;
+}
 var contact = function (personName) {
     var personObject = eval(personName)
     for (var prop in personObject) {
