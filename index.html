@@ -8,8 +8,11 @@ layout: default
 <button onclick="myFunction()">Calculez-moi ça!</button>
 
 <script>
-function myFunction() {
-    alert("Hello\nHow are you?");
+var contact = function (personName) {
+    var personObject = eval(personName)
+    for (var prop in personObject) {
+        document.write(prop + ": " + personObject[prop] + "</br>");
+    }
 }
 </script>
 
