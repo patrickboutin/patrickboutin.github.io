@@ -110,7 +110,7 @@ output {
 </p>
 <form>
   <label>Dose à donner (ml):</label>
-  <output>1000</output>
+  <output id="result"></output>
 </form>
 
 <script>
@@ -122,6 +122,9 @@ function myFunction1() {
 function myFunction2() {
     document.getElementById("myDropdown2").classList.toggle("show");
 }
+// Compute result of output
+var weight = document.getElementById("fname").value;
+document.getElementById("result").innerHTML = weight;
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
