@@ -14,7 +14,14 @@ layout: default
     font-weight: 700;
     font-size: 40px;
 }
-label {
+label[id=poids] {
+    font-family: Ormont light;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 45px 0px;
+    float: left;
+}
+label[id=dose] {
     font-family: Ormont light;
     font-weight: 700;
     font-size: 30px;
@@ -30,15 +37,21 @@ input[type=numeric] {
     box-sizing: border-box;
     float: left;
 }
+input[type=button] {
+    font-family: Ormont light;
+    font-size: 30px;
+    width: 30%;
+    padding: 20px 20px;
+
+}
 output {
     font-family: Ormont light;
     font-weight: 700;
     color: grey;
     font-size: 69px;
-    width: 30%;
     padding: 22px 20px;
     box-sizing: border-box;
-    float: left;
+    float: left;  
 }
 .dropbtn {
     background-color: #000;
@@ -51,6 +64,19 @@ output {
     cursor: pointer;
 }
 .dropbtn:hover, .dropbtn:focus {
+    background-color: #A9A9A9;
+}
+.calculatebtn {
+    background-color: black;
+    font-family: Ormont light;
+    font-weight: 700;
+    color: white;
+    padding: 40px;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+}
+.calculatebtn:hover, .dropbtn:focus {
     background-color: #A9A9A9;
 }
 .dropdown {
@@ -84,7 +110,7 @@ output {
 <!--<p>Click on the button to open the dropdown menu.</p> -->
 <div id="1">
 <form>
-  <label>Poids:</label>
+  <label id="poids">Poids:</label>
   <input type="numeric" id="fname">
 </form>
 </div>
@@ -108,11 +134,11 @@ output {
 </div>
 <p>
 </p>
-<form>
-  <label>Dose à donner (ml):</label>
-  <output id="result"></output>
-</form>
-
+  <input id="clickMe" type="button" class="calculatebtn" value="Calculez" onclick="doFunction();" />
+    <form>
+      <label id="dose">Dose à donner (ml): </label>
+      <output id="result"></output>
+    </form>
 <script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
