@@ -1,187 +1,93 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-<div class="home">
+    <title>Narrow Jumbotron Template for Bootstrap</title>
 
-  <h1 class="page-heading">Calculateur de doses</h1>
+    <!-- Bootstrap core CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<html>
-<head>
-<style>
-.page-heading {
-    font-family: Futura;
-    font-weight: 700;
-    font-size: 40px;
-}
-label[id=poids] {
-    font-family: Futura;
-    font-weight: 700;
-    font-size: 30px;
-    padding: 45px 0px;
-    float: left;
-}
-label[id=dose] {
-    font-family: Futura;
-    font-weight: 700;
-    font-size: 30px;
-    padding: 45px 0px;
-    float: left;
-}
-input[type=numeric] {
-    font-family: Futura;
-    font-weight: 700;
-    font-size: 69px;
-    width: 30%;
-    padding: 22px 20px;
-    box-sizing: border-box;
-    float: left;
-}
-input[type=button] {
-    font-family: Futura;
-    font-size: 30px;
-    width: 30%;
-    padding: 20px 20px;
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
 
-}
-output {
-    font-family: Futura;
-    font-weight: 700;
-    color: grey;
-    font-size: 69px;
-    padding: 22px 20px;
-    box-sizing: border-box;
-    float: left;  
-}
-.dropbtn {
-    background-color: #000;
-    font-family: Futura;
-    font-weight: 700;
-    color: white;
-    padding: 40px;
-    font-size: 40px;
-    border: none;
-    cursor: pointer;
-}
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #A9A9A9;
-}
-.calculatebtn {
-    background-color: black;
-    font-family: Futura;
-    font-weight: 700;
-    color: white;
-    padding: 40px;
-    font-size: 40px;
-    border: none;
-    cursor: pointer;
-}
-.calculatebtn:hover, .dropbtn:focus {
-    background-color: #A9A9A9;
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-content {
-    display: none;
-    position: relative;
-    font-family: Futura;
-    font-size: 18px;
-    font-weight: 700;
-    background-color: #F5F5F5;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-.dropdown a:hover {background-color: #A9A9A9}
-.show {display:block;}
-</style>
-</head>
-<body>
+    <script src="minimalist.js"></script>
 
-<!-- <h2>Clickable Dropdown</h2> -->
-<!--<p>Click on the button to open the dropdown menu.</p> -->
-<div id="1">
-<form>
-  <label id="poids">Poids:</label>
-  <input type="numeric" id="fname">
-</form>
-</div>
-<div id="2" class="dropdown">
-<button onclick="myFunction2()" class="dropbtn">Unité</button>
-  <div id="myDropdown2" class="dropdown-content">
-    <a option value="1">KG</a>
-    <a option value="0.453592">LBS</a>
-  </div>
-</div>
-<p>
-</p>
-<div class="dropdown">
-  <button onclick="myFunction1()" class="dropbtn">Médicament</button>
-  <div id="myDropdown1" class="dropdown-content">
-    <a option value="20">Ibuprofène - 100mg/5ml</a>
-    <a option value="40">Ibuprofène - 200mg/5ml</a>
-    <a option value="80">Acétaminophène - 80mg/ml</a>
-    <a option value="32">Acétaminophène - 160mg/5ml</a>
-  </div>
-</div>
-<p>
-</p>
-  <input id="clickMe" type="button" class="calculatebtn" value="Calculez" onclick="doFunction();" />
-    <form>
-      <label id="dose">Dose à donner (ml): </label>
-      <output id="result"></output>
-    </form>
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction1() {
-    document.getElementById("myDropdown1").classList.toggle("show");
-}
-function myFunction2() {
-    document.getElementById("myDropdown2").classList.toggle("show");
-}
-function doFunction(x, y) {
-		return x * y;
-}
-// Compute result of output
-document.getElementById("result").innerHTML = doFunction(5, 3);
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
+  </head>
 
-</body>
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Minimalist</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Calculateur de doses </h1>
+        <p class="lead">Blbablabala</p>
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="inputWeight" class="col-sm-2 control-label">Poids</label>
+            <div class="col-sm-4">
+              <input type="number" class="form-control" id="inputWeights" placeholder="0">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="medicaments" class="col-sm-2 control-label">Medicaments</label>
+            <div class="col-sm-4">
+              <select id="medicaments" class="form-control">
+                <option value="20">Ibuprofène - 100mg/5ml</option>
+                <option value="40">Ibuprofène - 200mg/5ml</option>
+                <option value="80">Acétaminophène - 80mg/ml</option>
+                <option value="32">Acétaminophène - 160mg/5ml</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <p class="bg-success">Dose à donner: 15 ml</p>
+          </div>
+        </form>
+        
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2017 Minimalist, Inc.</p>
+      </footer>
+
+    </div> <!-- /container -->
+  </body>
 </html>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-
-</div>
