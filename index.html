@@ -40,13 +40,19 @@
         <h1>Calculateur de doses </h1>
         <form class="form-horizontal">
           <div class="form-group">
-            <label for="inputWeight" class="col-sm-2 control-label">Poids: </label>
+            <label for="inputWeight" class="col-sm-4 control-label">Poids: </label>
             <div class="col-sm-6">
               <input type="number" class="form-control" id="inputWeights" placeholder="0">
             </div>
+            <div class="col-sm-2">
+              <select id="inputWeight" class="form-control">
+                <option value="KG">KG</option>
+                <option value="LBS">LBS</option>
+              </select>
+            </div>
           </div>
           <div class="form-group">
-            <label for="medicaments" class="col-sm-2 control-label">Médicament: </label>
+            <label for="medicaments" class="col-sm-4 control-label">Médicament: </label>
             <div class="col-sm-6">
               <select id="medicaments" class="form-control">
                 <option value="20">Ibuprofène - 100mg/5ml</option>
