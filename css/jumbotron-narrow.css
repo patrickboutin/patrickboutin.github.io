@@ -48,7 +48,19 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  color: white;
+  background-color: black;
 }
+
+.bg-success {
+  background-color: white;
+  color: black;
+}
+
+.nav-pills {
+  background-color: black;
+}
+
 .jumbotron .btn {
   padding: 14px 24px;
   font-size: 21px;
