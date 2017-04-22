@@ -1,6 +1,7 @@
 /* Space out content a bit */
 * {
   font-family: Ormont;
+  font-weight: 900;
 }
 body {
   padding-top: 20px;
@@ -55,9 +56,14 @@ body {
 .bg-success {
   background-color: white;
   color: black;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 4px;
 }
 
-.nav-pills {
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
   background-color: black;
 }
 
