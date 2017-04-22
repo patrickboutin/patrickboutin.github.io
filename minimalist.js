@@ -1,1 +1,3 @@
-console.log('hubi')
+$( document ).ready(function() {
+    console.log( "Allons-y!" );
+});
