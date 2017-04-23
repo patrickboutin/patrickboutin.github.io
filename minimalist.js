@@ -1,3 +1,4 @@
 $(document).ready(function() {
-    console.log( "Allons-y!" );
+    var weight = $('input[id=inputWeights]').val();
+    console.log( weight );
 });
