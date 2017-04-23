@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    var unit = $(".inputUnit").val();
+    console.log(unit);
     $( ".inputweight" ).change(function() {
         var weight = $(".inputweight").val();
         console.log( weight );
