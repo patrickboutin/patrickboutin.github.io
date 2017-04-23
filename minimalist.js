@@ -5,7 +5,7 @@ $(document).ready(function() {
     console.log(weight);
     var medication = $(".inputMedication").val();
     console.log(medication);
-    
+
     $( ".inputweight" ).change(function() {
         var weight = $(".inputweight").val();
         console.log( weight );
@@ -18,4 +18,6 @@ $(document).ready(function() {
         var medication = $(".inputMedication").val();
         console.log(medication);
     });
+    var result = weight * unit * medication;
+    ${".bg-success"}.text(result);
 });
