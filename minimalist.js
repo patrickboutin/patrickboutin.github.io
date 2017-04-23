@@ -1,4 +1,4 @@
 $(document).ready(function() {
-    var weight = $('input[id=inputWeights]').val();
-    console.log( weight );
+    $( ".inputweight" ).change(function() {
+  alert( "Handler for .change() called." );
 });
