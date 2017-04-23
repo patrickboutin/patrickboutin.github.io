@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    var weight = $(".inputweight").val();
     $( ".inputweight" ).change(function() {
+        var weight = $(".inputweight").val();
         alert( weight );
     });
 });
