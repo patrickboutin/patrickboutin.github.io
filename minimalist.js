@@ -19,5 +19,5 @@ $(document).ready(function() {
         console.log(medication);
     });
     var result = weight * unit * medication;
-    ${".bg-success"}.text(result);
+    $(".bg-success").text(result);
 });
