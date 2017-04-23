@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var weight = $('input[id=inputweight]').val();
+    var weight = $(".inputweight").val();
     $( ".inputweight" ).change(function() {
         alert( weight );
     });
