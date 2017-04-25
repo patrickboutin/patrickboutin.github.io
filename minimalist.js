@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var weight = $(".inputweight").change(function() {
+    $(".inputweight, .inputUnit, .inputMedication").change(function() {
         $(".inputweight").val();
     });
     console.log(weight);
