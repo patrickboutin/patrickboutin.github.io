@@ -12,7 +12,7 @@ $(document).ready(function() {
     $( ".inputMedication" ).change(function() {
         var medication = $(".inputMedication").val();
     });
-    var result = weight + " " + unit + " " + medication;
+    var result = parseFloat(weight) * parseFloat(unit) * parseFloat(medication);
     console.log(result);
     $(".bg-success").text("Dose à donner: " + result + " ml");
 });
