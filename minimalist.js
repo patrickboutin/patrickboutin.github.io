@@ -10,7 +10,4 @@ $(document).ready(function() {
         console.log(result);
         $(".bg-success").text("Dose à donner : " + result + " ml");
     });
-    $(".nav").click(function() {
-        window.location = "www.minimamalist.com";
-    });
 });
