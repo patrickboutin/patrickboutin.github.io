@@ -8,7 +8,7 @@ $(document).ready(function() {
         console.log(medication);
         var result = Math.round(parseFloat(weight) * parseFloat(unit) * parseFloat(medication)*10)/10;
         console.log(result);
-        $(".bg-success").text("Dose à donner: " + result + " ml");
+        $(".bg-success").text("Dose à donner : " + result + " ml");
     });
     $(".nav").click(function() {
         window.location = "www.minimamalist.com";
