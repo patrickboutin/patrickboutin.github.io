@@ -6,7 +6,7 @@ $(document).ready(function() {
         console.log(weight);
         console.log(unit);
         console.log(medication);
-        var result = Math.floor(parseFloat(weight) * parseFloat(unit) * parseFloat(medication));
+        var result = Math.round(parseFloat(weight) * parseFloat(unit) * parseFloat(medication)*10)/10;
         console.log(result);
         $(".bg-success").text("Dose à donner: " + result + " ml");
     });
