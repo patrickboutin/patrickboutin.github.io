@@ -70,6 +70,14 @@ body {
   border-radius: 4px;
 }
 
+.resultvalue {
+  background-color: white;
+  color: black;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 4px;
+}
+
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
