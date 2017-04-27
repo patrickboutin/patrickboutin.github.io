@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $(".inputweight, .inputUnit, .inputMedication").change(function() {
-        var weight = $(".inputweight").val();
-        var unit = $(".inputUnit").val();
+        
+        var weight = $(".inputweight").val().replace(",", ".");
         var medication = $(".inputMedication").val();
         console.log(weight);
         console.log(unit);
