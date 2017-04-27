@@ -62,7 +62,7 @@ body {
   background-color: black;
 }
 
-.bg-success {
+.bg-success .resultvalue {
   background-color: white;
   color: black;
   margin-left: 50px;
