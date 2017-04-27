@@ -8,7 +8,6 @@ $(document).ready(function() {
         console.log(unit);
         console.log(medication);
         var result = parseFloat(weight) * parseFloat(unit) * parseFloat(medication);
-        var result = num.toString(result).match(/^-?\d+(?:\.d{0,1})?/)[0];
         console.log(result);
         $(".bg-success").text("Dose à donner : " + result + " ml");
     });
