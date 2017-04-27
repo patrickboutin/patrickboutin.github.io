@@ -62,10 +62,17 @@ body {
   background-color: black;
 }
 
-.bg-success,
-.resultvalue {
+.bg-success {
   background-color: white;
   color: black;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 4px;
+}
+
+.resultvalue {
+  background-color: white;
+  color: #1b843e;
   margin-left: 50px;
   margin-right: 50px;
   border-radius: 4px;
