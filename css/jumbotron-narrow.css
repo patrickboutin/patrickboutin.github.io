@@ -63,8 +63,12 @@ body {
 }
 
 .jumbotron p {
-  font-size: 60px;
+  font-size: 30px;
   font-weight: 900;
+}
+
+p.resultvalue {
+  font-size: 60px;
 }
 
 .bg-success {
