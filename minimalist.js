@@ -9,8 +9,8 @@ $(document).ready(function() {
         console.log(medication);
         var result = Math.floor(parseFloat(weight) * parseFloat(unit) * parseFloat(medication)*10)/10;
         console.log(result);
-        $(".resultvalue").text(result + " ml ").slideDown("slow", function() {
-            
+        $(".resultvalue").text(result + " ml ").slideDown( {
+            slow
         });
     });
 });
