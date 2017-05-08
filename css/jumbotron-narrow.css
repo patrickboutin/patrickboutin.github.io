@@ -68,7 +68,7 @@ body {
 }
 
 p.resultvalue {
-  font-size: 60px;
+  font-size: 30px;
 }
 
 .bg-success {
@@ -81,7 +81,7 @@ p.resultvalue {
 
 .resultvalue {
   background-color: white;
-  color: red;
+  color: teal;
   margin-left: 50px;
   margin-right: 50px;
   border-radius: 4px;
