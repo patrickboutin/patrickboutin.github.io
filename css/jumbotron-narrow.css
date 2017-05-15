@@ -62,6 +62,13 @@ body {
   background-color: black;
 }
 
+.form-horizontal,
+.form-label {
+  padding-top: 7px;
+  margin-bottom: 0;
+  text-align: right;
+}
+
 .jumbotron p {
   font-size: 30px;
   font-weight: 900;
@@ -77,11 +84,6 @@ p.resultvalue {
   margin-left: 50px;
   margin-right: 50px;
   border-radius: 4px;
-}
-
-.control-label {
-  text-align: left;
-  font-weight: 900;
 }
 
 .prompt {
