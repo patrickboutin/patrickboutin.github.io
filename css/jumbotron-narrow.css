@@ -84,9 +84,8 @@ p.resultvalue {
   font-weight: 900;
 }
 
-.form-control,
-.inputUnit {
-  text-align: center;
+.prompt {
+  text-align: left;
 }
 
 .resultvalue {
