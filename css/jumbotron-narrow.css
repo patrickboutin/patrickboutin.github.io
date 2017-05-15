@@ -54,16 +54,6 @@ body {
   margin: 30px 0;
 }
 
-.control-label {
-  text-align: left;
-  font-weight: 900;
-}
-
-.inputUnit,
-.inputMedication {
-  text-align: center;
-}
-
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
@@ -87,6 +77,16 @@ p.resultvalue {
   margin-left: 50px;
   margin-right: 50px;
   border-radius: 4px;
+}
+
+.control-label {
+  text-align: left;
+  font-weight: 900;
+}
+
+.inputUnit,
+.inputMedication {
+  text-align: center;
 }
 
 .resultvalue {
