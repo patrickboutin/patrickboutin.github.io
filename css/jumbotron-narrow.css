@@ -84,8 +84,8 @@ p.resultvalue {
   font-weight: 900;
 }
 
-.inputUnit,
-.inputMedication {
+.form-control,
+.inputUnit {
   text-align: center;
 }
 
