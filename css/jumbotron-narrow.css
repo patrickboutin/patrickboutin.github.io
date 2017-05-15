@@ -62,13 +62,6 @@ body {
   background-color: black;
 }
 
-.form-horizontal,
-.form-label {
-  padding-top: 7px;
-  margin-bottom: 0;
-  text-align: right;
-}
-
 .jumbotron p {
   font-size: 30px;
   font-weight: 900;
